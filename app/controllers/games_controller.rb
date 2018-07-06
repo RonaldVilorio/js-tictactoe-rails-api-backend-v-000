@@ -16,6 +16,7 @@ class GamesController < ApplicationController
   def update
     @game = Game.find(params[:id])
     @game.state = ["X", "O", "", "", "", "", "", "", ""]
+    @game.save
     render json: @game
   end
 
