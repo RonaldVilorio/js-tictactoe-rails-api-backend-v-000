@@ -15,7 +15,6 @@ class GamesController < ApplicationController
 
   def update
     @game = Game.find(params[:id])
-    binding.pry
   end
 
 end
